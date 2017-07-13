@@ -3,7 +3,7 @@
  * @param {Array.<number>} arr
  * @returns Array.<number>
  */
-const bubblesort = (arr) => {
+export default (arr) => {
   for (let i = 0; i < arr.length; i += 1) {
     for (let j = i; j > 0; j -= 1) {
       if (arr[j] < arr[j - 1]) {
@@ -16,5 +16,3 @@ const bubblesort = (arr) => {
 
   return arr;
 };
-
-export default bubblesort;
