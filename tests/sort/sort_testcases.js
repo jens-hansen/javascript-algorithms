@@ -24,6 +24,12 @@ export default (sort) => {
 
         expect(sort(testArr)).toEqual(expectedArr);
       }
+    }, {
+      name: 'it works with array of just one element',
+      fn: () => {
+        const testArr = [84];
+        expect(sort(testArr)).toEqual(testArr)
+      }
     }
   ]
 }
